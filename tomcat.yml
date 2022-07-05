@@ -4,10 +4,10 @@
   become_method: sudo
   remote user: root
   vars:
-   tomcat_ver: 9.0.52
-   ui_manager_user: manager                    
-   ui_manager_pass: password123@22     
-   ui_admin_username: admin                    
-   ui_admin_pass: password123@22         
+    tomcat_ver: 9.0.52
+    ui_manager_user: manager                    
+    ui_manager_pass: password123@22     
+    ui_admin_username: admin                    
+    ui_admin_pass: password123@22         
   roles:
-   - tomcat
+    - tomcat
