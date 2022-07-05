@@ -1,0 +1,6 @@
+- name: playbook4
+  hosts: all
+  tasks:
+  - name: setup file execution
+    debug:
+     msg: "ansible_distri: {{ansible_distribution}}"
