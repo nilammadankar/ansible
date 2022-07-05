@@ -4,6 +4,7 @@
   - name: setup file execution
     debug:
      msg: "ansible_distri: {{ansible_distribution}}"
+    when: ansible== "centos" 
   - name: setup execution2
     debug:
      msg: "ansible capabilities: {{ansible_system_capabilities_enforced}}"
