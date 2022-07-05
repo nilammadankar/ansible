@@ -1,10 +1,10 @@
 - name: playbook4
   hosts: all
   tasks:
+   when:  ansible_system_capabilities_enforced== "false" and ansible_distribution== "false"
   - name: setup file execution
     debug:
      msg: "ansible_distri: {{ansible_distribution}}"
-    when:  ansible_system_capabilities_enforced== "false" 
   - name: setup execution2
     debug:
      msg: "ansible capabilities: {{ansible_system_capabilities_enforced}}"
