@@ -1,0 +1,8 @@
+- name:
+  hosts: all
+  become: true
+  tasks:
+   - name: copy module
+     copy: 
+      src: local.yml
+      dest: /mnt/aish_11
