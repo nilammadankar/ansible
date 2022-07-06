@@ -1,0 +1,10 @@
+- name: template module
+  hosts: all
+  become: true
+  vars:
+          demo: sami
+  tasks:
+    - template:
+        src: demo
+        dest: /mnt/
+

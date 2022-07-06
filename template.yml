@@ -1,0 +1,10 @@
+- name: template module
+  hosts: all
+  become: true
+  vars:
+    place: xyz
+  tasks:
+    - template:
+        src: temp
+        dest: /mnt/nyn
+
