@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - name:
   hosts: all
   become: true
@@ -6,3 +7,16 @@
      copy: 
       src: local.yml
       dest: /mnt/aish_11
+=======
+- name: loop playbook
+  hosts: all
+  tasks:
+  - name: print city name
+    debug:
+     msg: "city name: {{item}}"
+    loop:
+     - nagpur
+     - amravati
+     - pune
+     - mumbai
+>>>>>>> 7674319489bd108177dd1a1d62201691b94f6fff
