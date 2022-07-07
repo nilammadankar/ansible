@@ -4,10 +4,10 @@
   tasks:
   - name:
     find: 
-     path: /etc/ssh/
-     file_type: file
-     pattern: "*"
-     register: aishwarya
+      paths: /etc/ssh/
+      file_type: file
+      patterns: "*"
+      register: aishwarya
   - name: print messages
     debug:
       msg: "{{aishwarya}}"
