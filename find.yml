@@ -8,6 +8,4 @@
       file_type: file
       patterns: "*"
       register: aishwarya
-  - name: print messages
-    debug:
-      msg: {{aishwarya}}
+  
