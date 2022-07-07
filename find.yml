@@ -1,0 +1,13 @@
+- name: find playbook 
+  hosts: all
+  become: true
+  tasks:
+   - name:
+     find: 
+       path: /etc/ssh/
+       file_type: file
+       pattern: "*"
+       register: aishwarya
+
+       debug:
+        msg: {{aishwarya}}
