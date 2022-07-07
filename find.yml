@@ -2,12 +2,12 @@
   hosts: all
   become: true
   tasks:
-   - name:
-     find: 
-       path: /etc/ssh/
-       file_type: file
-       pattern: "*"
-       register: aishwarya
-   - name: print messages
-     debug:
+  - name:
+    find: 
+     path: /etc/ssh/
+     file_type: file
+     pattern: "*"
+     register: aishwarya
+  - name: print messages
+    debug:
       msg: "{{aishwarya}}"
