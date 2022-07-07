@@ -4,10 +4,10 @@
   tasks:
   - name: find messages
     find: 
-     paths: /etc/ssh
+     paths: /etc/ssh/sshd_config
      file_type: file
      patterns: "*"
-     register: out
+    register: out
     
     debug:
      msg: "{{out}}"
