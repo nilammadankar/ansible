@@ -10,7 +10,7 @@
     yum:
      name: java
      state: latest 
-     - name: for tomcat
+  - name: for tomcat
   - name: downloading tomcat
     get_url:
       url: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz"
