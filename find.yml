@@ -2,12 +2,12 @@
   hosts: all
   become: true
   tasks:
-  - name: find messages
-    find: 
-     paths: /etc/ssh/sshd_config
-     file_type: file
-     patterns: "*"
-    register: out
+   - name: find messages
+     find: 
+      paths: /etc/ssh/sshd_config
+      file_type: file
+      patterns: "*"
+     register: out
     
     debug:
      msg: "{{out}}"
