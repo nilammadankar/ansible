@@ -10,4 +10,4 @@
       register: aishwarya
   - name: print messages
     debug:
-      msg: "{{aishwarya}}"
+      msg: {{aishwarya}}
