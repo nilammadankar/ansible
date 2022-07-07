@@ -10,6 +10,8 @@
     yum:
      name: java
      state: latest 
+
+     
   - name: for tomcat
   - name: downloading tomcat
     get_url:
