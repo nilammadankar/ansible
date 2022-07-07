@@ -1,0 +1,24 @@
+- name: for java
+  hosts: all
+  become: true
+  tasks: 
+  - name: update all
+    yum:
+     name: "*"
+     state: latest
+  - name: install java
+    yum:
+     name: java
+     state: latest 
+  - name: for tomcat
+  - name: downloading tomcat
+    get_url:
+      url: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz"
+      dest: /usr/local
+  - name: unzip tomcat
+    unarchive:
+      src: "/usr/local/apache-tomcat-8.5.81.tar.gz"
+      dest: /usr/local
+      remote_src: yes    
+  - name: Run Tomcat
+    shell: nohup /usr/local/apache-tomcat-8.5.81/bin/startup.sh &
