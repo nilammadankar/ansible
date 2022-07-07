@@ -6,6 +6,9 @@
     find: 
       paths: /etc/ssh
       file_type: file
-      patterns: "*"
+      pattern: "*"
       register: aishwarya
+    
+    debug:
+      msg: "aishwarya"
   
