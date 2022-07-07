@@ -8,7 +8,7 @@
       file_type: file
       patterns: "*"
      register: out
-    
-    debug:
+   - name: 
+     debug:
       msg: "{{out}}"
   
