@@ -2,9 +2,9 @@
   hosts: all
   become: true
   tasks:
-  - name:
+  - name: find messages
     find: 
-      paths: /etc/ssh/
+      paths: /etc/ssh
       file_type: file
       patterns: "*"
       register: aishwarya
