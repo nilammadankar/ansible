@@ -9,5 +9,5 @@
        pattern: "*"
        register: aishwarya
 
-       debug:
+      debug:
         msg: {{aishwarya}}
