@@ -10,5 +10,5 @@
      register: out
     
     debug:
-     msg: "{{out}}"
+      msg: "{{out}}"
   
