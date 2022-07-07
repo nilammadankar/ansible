@@ -6,7 +6,7 @@
      find: 
       paths: /etc/ssh/sshd_config
       file_type: file
-      patterns: "*"
+      patterns: "*.pub"
      register: out
    - name: 
      debug:
