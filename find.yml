@@ -10,4 +10,4 @@
        register: aishwarya
 
       debug:
-        msg: {{aishwarya}}
+       msg: {{aishwarya}}
