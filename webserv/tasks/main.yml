@@ -1,2 +1,30 @@
 ---
-# tasks file for webserv
+- name: install package
+  package:
+    name: nginx
+    state: latest
+
+- name: download webserv template
+  get_url: 
+    url: https://www.free-css.com/assets/files/free-css-templates/download/page277/intot.zip
+    dest: /usr/share/nginx/html
+
+- name: install package unzip
+  package:
+    name: unzip
+    state: latest
+
+- name: template unzip
+  unarchive:
+    src: /usr/share/nginx/html/intot.zip
+    dest: /usr/share/nginx/html
+    remote_src: true
+
+- file: /usr/share/nginx/html
+    path: /usr/share/nginx/html
+    state: absent
+ - name: start and enable nginx
+   systemd:
+     name: nginx
+     state: started
+     enabled: true
