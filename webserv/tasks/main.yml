@@ -23,8 +23,8 @@
 - file: 
     path: /usr/share/nginx/html/index.html
     state: absent
- - name: start and enable nginx
-   systemd:
+- name: start and enable nginx
+  systemd:
      name: nginx
      state: started
      enabled: true
