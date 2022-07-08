@@ -7,7 +7,7 @@
 - name: download webserv template
   get_url: 
     url: https://www.free-css.com/assets/files/free-css-templates/download/page277/intot.zip
-    dest: /usr/share/nginx/html
+    dest: /var/www/html/
 
 - name: install package unzip
   package:
@@ -16,12 +16,12 @@
 
 - name: template unzip
   unarchive:
-    src: /usr/share/nginx/html/intot.zip
-    dest: /usr/share/nginx/html
+    src: /var/www/html/intot.zip
+    dest: /var/www/html
     remote_src: true
 
 - file: 
-    path: /usr/share/nginx/html/index.html
+    path: /var/www/html/index.nginx-debian.html
     state: absent
 - name: start and enable nginx
   systemd:
