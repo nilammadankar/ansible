@@ -20,8 +20,8 @@
     dest: /usr/share/nginx/html
     remote_src: true
 
-- file: /usr/share/nginx/html
-    path: /usr/share/nginx/html
+- file: 
+    path: /usr/share/nginx/html/index.html
     state: absent
  - name: start and enable nginx
    systemd:
