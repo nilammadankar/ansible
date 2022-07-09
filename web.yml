@@ -2,5 +2,10 @@
   hosts: all
   become: true
   roles:
+<<<<<<< HEAD
      - webserv 
           
+=======
+     - webb  
+     - webserv    
+>>>>>>> 44c26375ef78b3372d4550c77ab3bb75abde42d8
