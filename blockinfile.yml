@@ -1,9 +1,0 @@
-- name: blockfile
-  hosts: all
-  become: true
-  tasks: 
-   - blockinfile:
-       path: /mnt/block.txt
-       create: yes
-       block:
-        gfdgj  bdhjjc bcjdbc cbjcb

@@ -1,9 +1,0 @@
-- name: packages modules
-  hosts: all
-  tasks:
-   - name: package install with packages modules 
-     become: true
-     package:
-       name: nginx
-       state: latest
-

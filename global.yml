@@ -1,8 +1,0 @@
-- name: playbook1
-  hosts: all
-  vars: 
-   URL: aishwarya.in
-  tasks:
-  - name: global variable
-    debug:
-     msg: "{{URL}}"       
