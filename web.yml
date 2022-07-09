@@ -1,6 +1,6 @@
 - name: role playbook
   hosts: all
   become: true
-  role:
-     - webserv     
+  roles:
+     - webb  
           
