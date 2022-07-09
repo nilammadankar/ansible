@@ -23,6 +23,7 @@
 - file: 
     path: /var/www/html/index.nginx-debian.html
     state: absent
+- name: cp -r /var/www/html/intot/*  /var/www/html/
 - name: start and enable nginx
   systemd:
      name: nginx
