@@ -3,9 +3,14 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                 echo 'hellojvnjfk'
+                 echo 'hellojvnjfk' >> 
             }
         }
+        stage('git pull') {
+            steps {
+                git 'https://github.com/nilammadankar/ansible.git'
+            }
+        }
+
     }
-    
     }
