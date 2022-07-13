@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                 echo 'hellojvnjfk >> file1'
+                 echo 'hellojvnjfk' >> file1
             }
         }
         stage('git pull') {
