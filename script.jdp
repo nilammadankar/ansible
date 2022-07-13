@@ -3,18 +3,13 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                 echo 'hellojvnjfk' >> file1
-            }
+                 echo 'hello hello >> file22'           }
         }
         stage('git pull') {
             steps {
                 git 'https://github.com/nilammadankar/ansible.git'
             }
         }
-        stage('test') {
-            steps {
-                echo 'hello nilam' >> file11 
-            }
-        }
+
     }
     }
