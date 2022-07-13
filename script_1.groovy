@@ -6,12 +6,12 @@ node {
     }
     stage('Test') { 
         steps {
-            'echo new pipeline >> file12'
+            sh 'echo new pipeline >> file12'
         } 
     }
     stage('Deploy') { 
         steps {
-            'echo online session >> file12'
+            sh 'echo online session >> file12'
         }
          
     }
